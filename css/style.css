@@ -145,12 +145,14 @@ header .head-inner nav .nav-links{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -10px;
 }
 
 header .head-inner nav .nav-links li{
   padding-left:18px;
   padding-right: 10px;
   font-weight: bold;
+  margin-top: 0px;
  
 }
 
@@ -352,7 +354,23 @@ contact
    width: 100%;
    justify-content: center;
    align-items: center;
+   animation-name: design;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+   transition: all 2s ease-out;
+
 }
+@keyframes design {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+ 
 
 #style-design .style-design-b .designs-a .designs-b{
      
@@ -360,10 +378,9 @@ contact
           overflow: hidden;
          position: relative;
          margin: 10px 20px;
-      
-        
-}
-
+       
+    }
+  
 #style-design .style-design-b .designs-a .designs-b::after{
     content: "";
     position: absolute;
@@ -373,8 +390,6 @@ contact
     background: rgba(0, 0, 0, 0.8);
    display: none;
    cursor: pointer;
-  
-  
   
 }
 
@@ -495,7 +510,7 @@ opacity:1;
 
 /* taigo*/
 #tiago{
-    background-color: #fff;
+  
     margin-top: 60px;
     padding:60px 0;
  
@@ -522,6 +537,50 @@ opacity:1;
 #tiago .tiago-flex .flex-card > div p, #tiago .tiago-flex .flex-card > div ul{
     padding-top: 10px;
     font-size: 15px;
+}
+
+/* contact */
+#contact{
+    padding:60px 0;
+}
+#contact .contact-info form > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+#contact .contact-info{
+    padding: 0 200px;
+    
+}
+#contact .contact-info form > div{
+    margin-bottom: 10px;
+}
+
+#contact .contact-info form > div input[type="text"],#contact .contact-info form > div input[type="email"] {
+     outline: none;
+     padding:15px 15px;
+     background-color: #fff;
+     border: none;
+}
+
+#contact .contact-info form > div input[type="text"]:focus,
+#contact .contact-info form > div input[type="email"]:focus{
+   border: 1px solid rgb(146, 233, 248);
+  
+}
+
+#contact .contact-info textarea{
+    width: 100%;
+    resize: none;
+    border: none;
+    outline:none;
+   
+}
+#contact .contact-info textarea:focus{
+    border: 1px solid rgb(146, 233, 248);
+}
+#contact .contact-info textarea::placeholder{
+    padding: 15px;
 }
 
 
