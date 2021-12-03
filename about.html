@@ -25,16 +25,19 @@ crossorigin="anonymous"
 <div class="head-inner">
 <!--img-logo-->
 <!--<img src="img/logo.jpg" alt="">-->
+<!--img-logo-->
+<img class="logo" src="img/logo.png" alt="">
 <h2>TFG</h2>
 <!--nav-->
 <div class="bar"><i class="fas fa-bars"></i></div>
 <nav>
+
+    <div class="time"><i class="fas fa-times"></i></div>
     <!--nav-links-->
-    
-    <div class="cross"><i class="fas fa-times"></i> </div>
+
     <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="current"   href="about.html">ABOUT</a></li>
         <li><a href="shop.html">SHOP</a></li>
         <li><a href="contact.html">CONTACT</a></li>
     </ul>
@@ -114,28 +117,33 @@ crossorigin="anonymous"
     <div class="service-cards">
     <!--card-->
     <div class="card">
-        <i class="fas fa-drafting-compass fa-2x"></i>
+        <div class="icon">
+        <i class="fas fa-drafting-compass"></i>
         <div>
         <h3>DESIGNS</h3>
         <p>We study fashion trends and anticipate designs that will
             appeal to our customer </p>
         </div>
+        </div>
     </div>
     <!--card-end-->
     <!--card-->
         <div class="card">
-        <i class="fas fa-percent fa-2x"></i>
+         <div class="icon">
+        <i class="fas fa-percent"></i>
         <div>
         <h3>QUALITY</h3>
         <p>We select fabrics, embellishment, colors, or style for each
             garment or accessory.
         </p>
         </div>
+        </div>
     </div>
     <!--card-end-->
     <!--card-->
         <div class="card">
-        <i class="fas fa-users fa-2x"></i>
+        <div class="icon">
+        <i class="fas fa-users"></i>
         <div>
         <h3>HELP & SUPPORT</h3>
         <p>We render expectional sevices to our customers.Visit my contact 
@@ -143,16 +151,21 @@ crossorigin="anonymous"
         </p>
         </div>
     </div>
+    </div>
     <!--card-end-->
     <!--card-->
     <div class="card">
-        <i class="fas fa-shipping-fast fa-2x"></i>
+        <div class="card">
+            <div class="icon">
+        <i class="fas fa-shipping-fast"></i>
         <div>
         <h3>LOGISTICS</h3>
         <p>Distance is not a barrier.We provide expectional delivery services(home & abroad) 
             that will make your demands easily available to you.
         </p>
         </div>
+        </div>
+    </div>
     </div>
     <!--card-end-->
     </div>
@@ -167,7 +180,7 @@ crossorigin="anonymous"
             <div class="info-flex">
                 <!--info-box-->
                 <div class="info-box">
-                    <img src="img/logo.jpg" alt="">
+                    <img src="img/logo.png" alt="">
                     <h1 style="padding: 15px 0;">TIAGO FASHION COLLECTIONS</h1>
                         <p>Deal with clothing brand, tailoring suit, traditional attires
                             personal styling, quality fabrics, wedding stylist.</p>
@@ -216,10 +229,15 @@ crossorigin="anonymous"
 
                  </div>
                 </div>
-                <footer style="display: flex;">
-                    <p> &copy; 2019<span style="color: #066c9b;"> Taigo fashion house</span> All Right Reserved</p>
-              </footer>
-    </section>
+                   
+              <div class="arrowup">
+                <a href="#about"><i class="fas fa-arrow-up"></i></a>
+                </div>
+
+              </section>
+              <footer style="display: flex;">
+                <p> &copy; 2021<span style="color: #fb8f26;"> Taigo fashion house</span> All Right Reserved</p>
+          </footer>
 
 <script src="js/app.js"></script>
 </body>
