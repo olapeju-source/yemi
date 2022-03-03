@@ -772,10 +772,14 @@ footer p{
     
    
 }
+
+
 #style-design .style-design-b .designs-a{
    
-    grid-template-columns: 1fr;
-    text-align: center;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+   
 }
 
 
@@ -786,12 +790,12 @@ footer p{
  #style-design .style-design-b .designs-a .designs-b img{
     width:100%;
     height: 100%;
+ 
     
  }
 
- #style-design .style-design-b .designs-a .designs-b .price{
-  
- }
+
+
  .bar{
     
 display: flex;
